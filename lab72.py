@@ -13,7 +13,6 @@ def interpolSearchRec(A, elem, left, right, B):
     # если подмассив пустой ИЛИ elem за границами диапазона, то делать нечего
     if left > right:
         return B
-
     if elem < A[left] or elem > A[right]:
         return B
     # если левая и правая границы совпадают, то mid по формуле вычислять нельзя! (почему?)
