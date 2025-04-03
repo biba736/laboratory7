@@ -1,5 +1,8 @@
 def binSearch(A, elem):
     # если искомый элемент за границами диапазона,то делать нечего
+    if not A:
+        return []
+
     if elem < A[0] or elem > A[-1]:
         return None
 
@@ -25,6 +28,6 @@ def binSearchRec(A, elem, left, right, B):
         return binSearchRec(A, elem, mid + 1, right, B)
 
 
-elem = int(input())
+"""elem = int(input())
 A = list(map(int, input().split()))
-print(" ".join(map(str, binSearch(A, elem))))
+print(" ".join(map(str, binSearch(A, elem))))"""
